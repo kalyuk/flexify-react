@@ -1,9 +1,9 @@
-import { useContext } from 'react';
-import { ContainerClassType, Container } from '@flexify/core';
-import { ContainerValue } from './container.provider';
+import * as React from 'react';
+import { ContainerClassType } from '@flexify/core';
+import { Container } from './container.provider';
 
 export function useDi<T>(Target: ContainerClassType<T> | any): T {
-    const context: Container = useContext(ContainerValue);
+    const context = React.useContext(Container);
 
     return context.get(Target);
 }

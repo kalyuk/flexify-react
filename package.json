@@ -1,6 +1,6 @@
 {
   "name": "@flexify/react",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "",
   "types": "dist/index.d.ts",
   "main": "./dist/index.js",
@@ -14,10 +14,13 @@
     "url": "git+https://github.com/kalyuk/flexify-react.git"
   },
   "dependencies": {
-    "react": "^17.0.2",
     "@flexify/core": "0.0.4"
   },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
   "devDependencies": {
+    "@types/react": "^17.0.2",
     "typescript": "^4.4.0-dev.20210722"
   },
   "author": "Dmitriy Kalyuk <kalyukdo@gmail.com>",
